@@ -1,9 +1,9 @@
-package pl.edu.amu.wmi.plugins.dto
+package pl.edu.amu.wmi.diplomas.dto
 
-data class DiplomaDTO(
+data class DiplomaDto(
     val titleEn: String,
     val titlePl: String,
     val description: String,
     val projectId: Int,
-    val chapters: List<DiplomaChapterDTO>
+    val chapters: List<DiplomaChapterDto>
 )

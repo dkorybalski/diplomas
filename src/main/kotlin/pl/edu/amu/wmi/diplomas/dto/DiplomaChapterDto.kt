@@ -1,6 +1,6 @@
-package pl.edu.amu.wmi.plugins.dto
+package pl.edu.amu.wmi.diplomas.dto
 
-data class DiplomaChapterDTO(
+data class DiplomaChapterDto(
     val title: String,
     val description: String,
     val studentIndex: String

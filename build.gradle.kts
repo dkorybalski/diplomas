@@ -22,11 +22,18 @@ repositories {
 }
 
 dependencies {
-    implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")
-    implementation("io.ktor:ktor-serialization-jackson:$ktor_version")
-    implementation("io.ktor:ktor-server-core-jvm")
-    implementation("io.ktor:ktor-server-netty-jvm")
-    implementation("ch.qos.logback:logback-classic:$logback_version")
+    api("io.insert-koin:koin-ktor:3.4.1")
+    api("org.postgresql:postgresql:42.7.3")
+    api("com.zaxxer:HikariCP:5.1.0")
+    api("org.jetbrains.exposed:exposed-core:0.48.0")
+    api("org.jetbrains.exposed:exposed-jdbc:0.48.0")
+    api("org.flywaydb:flyway-core:9.0.4")
+    api("io.ktor:ktor-server-content-negotiation:$ktor_version")
+    api("io.ktor:ktor-serialization-jackson:$ktor_version")
+    api("io.ktor:ktor-server-core-jvm")
+    api("io.ktor:ktor-server-netty-jvm")
+    api("ch.qos.logback:logback-classic:$logback_version")
+    runtimeOnly("io.insert-koin:koin-core:3.4.1")
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 }
